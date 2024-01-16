@@ -1,0 +1,16 @@
+@import url(./fonts.scss);
+span {
+  color: blue;
+}
+img {
+  width: 100px;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 400px;
+  background-image: url("@img/Ellipse 5.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
