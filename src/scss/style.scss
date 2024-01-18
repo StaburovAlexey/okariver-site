@@ -1,5 +1,16 @@
 $font-stack: "EBGaramondSC08", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
 
 @import "normalize";
 @import "fonts";
 @import "header";
+@import "main";
+@import "card";
+
+
+body {
+  background-color: black;
+}

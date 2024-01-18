@@ -9,38 +9,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .header__logo {
     display: block;
     width: 30%;
     aspect-ratio: 1/1;
+    @media screen and (max-width: 767px){
+      width: 50%;
+    }
   }
 
   .header__info {
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     row-gap: 50px;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+      flex-direction: column;
+    }
   }
   .header__tasting {
+    width: 45%;
     font-family: $font-stack;
-
-    h2 {
-      font-size: 2px;
-      letter-spacing: 2px;
-      color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    vertical-align: top;
+    @media screen and (min-width: 1440px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      font-size: 1rem;
     }
   }
   .header__price {
+    width: 45%;
     font-family: $font-stack;
-
-    h2 {
-      font-size: 22px;
-      letter-spacing: 2px;
-      color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    vertical-align: top;
+    @media screen and (min-width: 1440px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      font-size: 1rem;
     }
   }
 
@@ -50,10 +70,13 @@
 
     .header__icon {
       width: 40px;
-      height: 40px;
+      aspect-ratio: 1/1;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      @media screen and (min-width: 1440px) {
+        width: 80px;
+      }
     }
   }
 }
