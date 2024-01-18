@@ -1,4 +1,25 @@
-.card{
-  border: 1px blue solid;
+.card {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .card__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .card__title {
+    color: white;
+    font-family: $font-stack;
+    font-size: 2rem;
+  }
+  .card__text {
+    color: white;
+    font-family: $font-stack;
+    width: 90%;
+  }
 }
