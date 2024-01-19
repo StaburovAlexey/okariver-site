@@ -16,6 +16,13 @@
     color: white;
     font-family: $font-stack;
     font-size: 2rem;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
   .card__text {
     color: white;

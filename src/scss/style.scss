@@ -3,13 +3,21 @@ $font-stack: "EBGaramondSC08", sans-serif;
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    opacity: 0.8;
+  }
+}
 
 @import "normalize";
 @import "fonts";
 @import "header";
 @import "main";
 @import "card";
-
+@import "footer";
+@import "contacts";
 
 body {
   background-color: black;

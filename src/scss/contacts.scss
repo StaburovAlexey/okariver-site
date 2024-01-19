@@ -1,0 +1,27 @@
+.contacts {
+  width: 100%;
+  list-style: none;
+  color: white;
+  font-family: $font-stack;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0 0 0;
+  @media screen and (min-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    gap: 50px;
+  }
+
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contacts__title {
+  }
+}
