@@ -21,7 +21,6 @@ export const scss = () => {
           })
         )
       )
-      .pipe(app.plugins.replace(/@img\//g, "../img/"))
       .pipe(
         sass({
           outputStyle: "expanded",
@@ -47,8 +46,9 @@ export const scss = () => {
           })
         )
       )
-      //раскоментировать усли нужен не сжатый дубль файла стилей
-      // .pipe(app.gulp.dest(app.path.build.css))
+      .pipe(app.plugins.replace(/@img\//g, "../img/")) // Move the replace function here
+      //raскоментировать усли нужен не сжатый дубль файла стилей
+      .pipe(app.gulp.dest(app.path.build.css))
       .pipe(app.plugins.if(app.isBuild, cleanCss()))
       .pipe(
         rename({
