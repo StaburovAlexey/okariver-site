@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url("@img/header.jpg");
+  background-image: url("@img/header2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,13 +13,23 @@
 
   .header__logo {
     display: block;
-    width: 30%;
+    width: 20%;
     aspect-ratio: 1/1;
     @media screen and (max-width: 1024px) {
       width: 50%;
     }
   }
 
+  .header__text {
+    width: 65%;
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    @media screen and (max-width: 1024px){
+      font-size: 12px;
+    }
+  }
   .header__info {
     width: 80%;
     display: flex;
@@ -72,6 +82,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      background-color: transparent;
       &:hover {
         opacity: 0.8;
       }
@@ -85,8 +96,8 @@
 .icon-vk {
   background-image: url(../img/icons8-vk-48.png);
 }
-.icon-tg {
-  background-image: url(../img/icons8-телеграмма-app-48.png);
+.icon-untapdd {
+  background-image: url(../img/untappd.png);
 }
 .icon-inst {
   background-image: url(../img/icons8-instagram-48.png);
