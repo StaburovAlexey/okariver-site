@@ -1,1 +1,1 @@
-# okariver-site
+# Статичный сайт для пивоварни Oka-River
